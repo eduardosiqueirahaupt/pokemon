@@ -19,9 +19,15 @@ describe("<Home/>", () => {
     cleanup()
   })
 
-  it("Deve clicar no botão e trazer pokemons", async () => {
-    const { getAllByText } = renderComponent();
-    expect((await waitFor(() => getAllByText(/bulbasaur/)))).toBeDefined();
+  it("Deve renderizar com sucesso", async () => {
+    const { container } = renderComponent();
+    await waitFor(() => screen.findByText(/bulbasaur/))
+    expect(container).toMatchSnapshot();
+  });
+
+  it("Deve achar pokemon ao carregar tela", async () => {
+    renderComponent();
+    expect(await waitFor(() => screen.findByText(/bulbasaur/))).toBeDefined();
   })
 })
 

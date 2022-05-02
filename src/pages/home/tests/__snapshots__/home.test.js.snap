@@ -1,0 +1,513 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Home/> Deve renderizar com sucesso 1`] = `
+<div>
+  <div
+    class="sc-gKXOVf icvWOW"
+  >
+    <div
+      class="sc-eCYdqJ aSyst"
+    >
+      <input
+        class="sc-jSMfEi hBkAaQ"
+        name="search"
+        placeholder="Buscar..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-iBkjds hneEwm"
+    >
+      <div
+        class="sc-ftvSup laBHLg"
+      >
+        <div
+          class="sc-papXJ eNaToX"
+        >
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              bulbasaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              ivysaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              venusaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              charmander
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              charmeleon
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              charizard
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/6.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              squirtle
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/7.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              wartortle
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/8.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              blastoise
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/9.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              caterpie
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/10.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              metapod
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/11.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              butterfree
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/12.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              weedle
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/13.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              kakuna
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/14.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              beedrill
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/15.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              pidgey
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/16.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              pidgeotto
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/17.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              pidgeot
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/18.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              rattata
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/19.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              raticate
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/20.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              src="add-fav.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

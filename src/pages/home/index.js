@@ -15,9 +15,7 @@ const Home = ({ isFavorites }) => {
 
   const getData = useCallback(async () => {
     try {
-
       const _data = await fetchData();
-      console.log("TESTE", _data)
       setPokeData(_data.results)
     }
     catch (e) {
