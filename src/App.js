@@ -1,23 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
+import Header from "./components/header";
+import Home from "./pages/home";
+import './App.css'
 
 function App() {
+  const initPokemonsFav = () => {
+    if (!localStorage.getItem("FavPokemons")) {
+      localStorage.setItem("FavPokemons", JSON.stringify([]))
+    }
+  }
+
+  useEffect(() => {
+    initPokemonsFav()
+  }, [])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app-container">
+      <Header />
+      <Routes>
+        <Route path="/" exact element={<Home />} />
+        <Route path="/favorites" exact element={<Home isFavorites />} />
+      </Routes>
     </div>
   );
 }
