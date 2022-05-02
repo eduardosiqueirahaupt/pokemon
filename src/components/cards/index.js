@@ -1,8 +1,9 @@
 import Card from "../card"
 
 const Cards = ({ data }) => {
+  console.log("DATAAAAAAAAAA", data)
   const pokemons = () => data
-    .map(x => ({ id: x.url.slice(0, -1).split("/").at(-1), name: x.name }))
+    .map(x => ({ id: x.url.slice(34).split('/')[0], name: x.name }))
 
   return (
     pokemons().map(x => (

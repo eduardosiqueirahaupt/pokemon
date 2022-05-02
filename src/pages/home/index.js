@@ -14,17 +14,22 @@ const Home = ({ isFavorites }) => {
   }
 
   const getData = useCallback(async () => {
-    const _data = await fetchData();
-    setPokeData(_data.results)
+    try {
+
+      const _data = await fetchData();
+      console.log("TESTE", _data)
+      setPokeData(_data.results)
+    }
+    catch (e) {
+      console.log(e)
+    }
   }, [])
 
   const filterPokemons = () => pokeData.filter(x => x.name.includes(search.toLowerCase()))
 
   useEffect(() => {
-    if (pokeData.length === 0) {
-      getData();
-    }
-  }, [getData, pokeData])
+    getData();
+  }, [getData])
 
   return (
     pokeData && <S.Wrapper>
