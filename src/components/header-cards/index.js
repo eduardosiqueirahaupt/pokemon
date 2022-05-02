@@ -6,6 +6,7 @@ const Header = ({ search, handleSearch }) => (
       value={search}
       onChange={handleSearch}
       type="text" name="search" placeholder="Buscar..."
+      data-testid='input-filter'
     />
   </S.Wrapper>
 )

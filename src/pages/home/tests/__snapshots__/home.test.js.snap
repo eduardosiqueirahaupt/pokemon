@@ -10,6 +10,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
     >
       <input
         class="sc-jSMfEi hBkAaQ"
+        data-testid="input-filter"
         name="search"
         placeholder="Buscar..."
         type="text"
@@ -46,6 +47,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-bulbasaur"
               src="add-fav.png"
             />
           </div>
@@ -70,6 +72,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-ivysaur"
               src="add-fav.png"
             />
           </div>
@@ -94,6 +97,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-venusaur"
               src="add-fav.png"
             />
           </div>
@@ -118,6 +122,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-charmander"
               src="add-fav.png"
             />
           </div>
@@ -142,6 +147,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-charmeleon"
               src="add-fav.png"
             />
           </div>
@@ -166,6 +172,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-charizard"
               src="add-fav.png"
             />
           </div>
@@ -190,6 +197,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-squirtle"
               src="add-fav.png"
             />
           </div>
@@ -214,6 +222,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-wartortle"
               src="add-fav.png"
             />
           </div>
@@ -238,6 +247,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-blastoise"
               src="add-fav.png"
             />
           </div>
@@ -262,6 +272,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-caterpie"
               src="add-fav.png"
             />
           </div>
@@ -286,6 +297,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-metapod"
               src="add-fav.png"
             />
           </div>
@@ -310,6 +322,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-butterfree"
               src="add-fav.png"
             />
           </div>
@@ -334,6 +347,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-weedle"
               src="add-fav.png"
             />
           </div>
@@ -358,6 +372,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-kakuna"
               src="add-fav.png"
             />
           </div>
@@ -382,6 +397,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-beedrill"
               src="add-fav.png"
             />
           </div>
@@ -406,6 +422,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-pidgey"
               src="add-fav.png"
             />
           </div>
@@ -430,6 +447,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-pidgeotto"
               src="add-fav.png"
             />
           </div>
@@ -454,6 +472,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-pidgeot"
               src="add-fav.png"
             />
           </div>
@@ -478,6 +497,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-rattata"
               src="add-fav.png"
             />
           </div>
@@ -502,7 +522,166 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
             <img
               alt="fav-icon"
               class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-raticate"
               src="add-fav.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`<HomeFavorites/> Deve renderizar com sucesso favoritos 1`] = `
+<div>
+  <div
+    class="sc-gKXOVf icvWOW"
+  >
+    <div
+      class="sc-eCYdqJ aSyst"
+    >
+      <input
+        class="sc-jSMfEi hBkAaQ"
+        data-testid="input-filter"
+        name="search"
+        placeholder="Buscar..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-iBkjds hneEwm"
+    >
+      <div
+        class="sc-ftvSup laBHLg"
+      >
+        <div
+          class="sc-papXJ eNaToX"
+        >
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              bulbasaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-bulbasaur"
+              src="favorito.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              ivysaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-ivysaur"
+              src="favorito.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              venusaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-venusaur"
+              src="favorito.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              charmander
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-charmander"
+              src="favorito.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              charmeleon
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-charmeleon"
+              src="favorito.png"
             />
           </div>
         </div>
