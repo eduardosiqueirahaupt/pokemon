@@ -9,12 +9,9 @@ const renderComponent = (isFavorites) => (
 )
 
 describe("<Home/>", () => {
-  beforeAll(() => {
-    localStorage.setItem("FavPokemons", JSON.stringify([]))
-  });
-
   beforeEach(() => {
     jest.spyOn(service, 'fetchData').mockImplementation(jest.fn(() => Promise.resolve(getPokemonsMock)));
+    localStorage.setItem("FavPokemons", JSON.stringify([]))
     cleanup();
   })
 
@@ -42,6 +39,7 @@ describe("<Home/>", () => {
   });
 
   it("Deve remover Pokemon dos Favoritos", async () => {
+    localStorage.setItem("FavPokemons", JSON.stringify(['1']))
     renderComponent();
     await waitFor(() => screen.findByText(/bulbasaur/));
 
@@ -94,7 +92,7 @@ describe("<HomeFavorites/>", () => {
     expect(container).toMatchSnapshot();
   });
 
-  
+
   it("Deve remover dos favoritos e não aparecer mais em tela", async () => {
     renderComponent(true);
     await waitFor(() => screen.findByText(/bulbasaur/));
