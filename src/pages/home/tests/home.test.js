@@ -77,37 +77,7 @@ describe("<Home/>", () => {
   });
 })
 
-
-describe("<HomeFavorites/>", () => {
-  beforeAll(() => {
-    localStorage.setItem("FavPokemons", JSON.stringify(['1', '2', '3', '4', '5']))
-  });
-
-  beforeEach(() => {
-    jest.spyOn(service, 'fetchData').mockImplementation(jest.fn(() => Promise.resolve(getPokemonsMock)));
-    cleanup();
-  })
-
-  it("Deve renderizar com sucesso favoritos", async () => {
-    const { container } = renderComponent(true);
-    await waitFor(() => screen.findByText(/bulbasaur/))
-    expect(container).toMatchSnapshot();
-  });
-
-  
-  it("Deve remover dos favoritos e não aparecer mais em tela", async () => {
-    renderComponent(true);
-    await waitFor(() => screen.findByText(/bulbasaur/));
-
-    const favIconBulbasaur = screen.getByTestId('fav-icon-bulbasaur');
-    fireEvent.click(favIconBulbasaur)
-
-    expect(await waitFor(() => screen.findByText(/Pokemon Removido dos Favoritos/))).toBeDefined();
-    expect(screen.queryByText(/bulbasaur/)).toBeNull();
-  });
-})
-
-const getPokemonsMock = {
+export const getPokemonsMock = {
   "count": 1126,
   "next": "https://pokeapi.co/api/v2/pokemon/?offset=20&limit=20",
   "previous": null,

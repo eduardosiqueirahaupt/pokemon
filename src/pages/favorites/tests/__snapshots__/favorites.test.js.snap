@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Favorites/> Deve renderizar com sucesso favoritos 1`] = `
+<div>
+  <div
+    class="sc-eCYdqJ jZqxvB"
+  >
+    <div
+      class="sc-jSMfEi gOcqoV"
+    >
+      <div
+        class="sc-gKXOVf bVVSER"
+      >
+        <div
+          class="sc-iBkjds bRnbqh"
+        >
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              bulbasaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-bulbasaur"
+              src="favorito.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              ivysaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-ivysaur"
+              src="favorito.png"
+            />
+          </div>
+          <div
+            class="sc-bczRLJ hxuUtm"
+          >
+            <div
+              class="sc-gsnTZi fUNCkM"
+            >
+              venusaur
+            </div>
+            <div
+              class="sc-dkzDqf hFZDNz"
+            >
+              <img
+                alt="poketeste"
+                height="100%"
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg"
+                width="90%"
+              />
+            </div>
+            <img
+              alt="fav-icon"
+              class="sc-hKMtZM bvsQcw"
+              data-testid="fav-icon-venusaur"
+              src="favorito.png"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

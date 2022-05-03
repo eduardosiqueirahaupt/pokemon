@@ -3,28 +3,28 @@
 exports[`<Home/> Deve renderizar com sucesso 1`] = `
 <div>
   <div
-    class="sc-gKXOVf icvWOW"
+    class="sc-eCYdqJ QSBIM"
+  >
+    <input
+      class="sc-jSMfEi hBkAaQ"
+      data-testid="input-filter"
+      name="search"
+      placeholder="Buscar..."
+      type="text"
+      value=""
+    />
+  </div>
+  <div
+    class="sc-ftvSup hFhTFb"
   >
     <div
-      class="sc-eCYdqJ aSyst"
-    >
-      <input
-        class="sc-jSMfEi hBkAaQ"
-        data-testid="input-filter"
-        name="search"
-        placeholder="Buscar..."
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      class="sc-iBkjds hneEwm"
+      class="sc-papXJ cYtZtE"
     >
       <div
-        class="sc-ftvSup laBHLg"
+        class="sc-jqUVSM jjphog"
       >
         <div
-          class="sc-papXJ eNaToX"
+          class="sc-kDDrLX kLgwMV"
         >
           <div
             class="sc-bczRLJ hxuUtm"
@@ -530,163 +530,21 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
       </div>
     </div>
   </div>
-</div>
-`;
-
-exports[`<HomeFavorites/> Deve renderizar com sucesso favoritos 1`] = `
-<div>
   <div
-    class="sc-gKXOVf icvWOW"
+    class="sc-gKXOVf goYihl"
   >
-    <div
-      class="sc-eCYdqJ aSyst"
+    <span
+      class="sc-iBkjds gLAUHr disabled"
+      title="Página Anterior"
     >
-      <input
-        class="sc-jSMfEi hBkAaQ"
-        data-testid="input-filter"
-        name="search"
-        placeholder="Buscar..."
-        type="text"
-        value=""
-      />
-    </div>
-    <div
-      class="sc-iBkjds hneEwm"
+      &lt;
+    </span>
+    <span
+      class="sc-iBkjds gLAUHr"
+      title="Próxima Página"
     >
-      <div
-        class="sc-ftvSup laBHLg"
-      >
-        <div
-          class="sc-papXJ eNaToX"
-        >
-          <div
-            class="sc-bczRLJ hxuUtm"
-          >
-            <div
-              class="sc-gsnTZi fUNCkM"
-            >
-              bulbasaur
-            </div>
-            <div
-              class="sc-dkzDqf hFZDNz"
-            >
-              <img
-                alt="poketeste"
-                height="100%"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-                width="90%"
-              />
-            </div>
-            <img
-              alt="fav-icon"
-              class="sc-hKMtZM bvsQcw"
-              data-testid="fav-icon-bulbasaur"
-              src="favorito.png"
-            />
-          </div>
-          <div
-            class="sc-bczRLJ hxuUtm"
-          >
-            <div
-              class="sc-gsnTZi fUNCkM"
-            >
-              ivysaur
-            </div>
-            <div
-              class="sc-dkzDqf hFZDNz"
-            >
-              <img
-                alt="poketeste"
-                height="100%"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/2.svg"
-                width="90%"
-              />
-            </div>
-            <img
-              alt="fav-icon"
-              class="sc-hKMtZM bvsQcw"
-              data-testid="fav-icon-ivysaur"
-              src="favorito.png"
-            />
-          </div>
-          <div
-            class="sc-bczRLJ hxuUtm"
-          >
-            <div
-              class="sc-gsnTZi fUNCkM"
-            >
-              venusaur
-            </div>
-            <div
-              class="sc-dkzDqf hFZDNz"
-            >
-              <img
-                alt="poketeste"
-                height="100%"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/3.svg"
-                width="90%"
-              />
-            </div>
-            <img
-              alt="fav-icon"
-              class="sc-hKMtZM bvsQcw"
-              data-testid="fav-icon-venusaur"
-              src="favorito.png"
-            />
-          </div>
-          <div
-            class="sc-bczRLJ hxuUtm"
-          >
-            <div
-              class="sc-gsnTZi fUNCkM"
-            >
-              charmander
-            </div>
-            <div
-              class="sc-dkzDqf hFZDNz"
-            >
-              <img
-                alt="poketeste"
-                height="100%"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/4.svg"
-                width="90%"
-              />
-            </div>
-            <img
-              alt="fav-icon"
-              class="sc-hKMtZM bvsQcw"
-              data-testid="fav-icon-charmander"
-              src="favorito.png"
-            />
-          </div>
-          <div
-            class="sc-bczRLJ hxuUtm"
-          >
-            <div
-              class="sc-gsnTZi fUNCkM"
-            >
-              charmeleon
-            </div>
-            <div
-              class="sc-dkzDqf hFZDNz"
-            >
-              <img
-                alt="poketeste"
-                height="100%"
-                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/5.svg"
-                width="90%"
-              />
-            </div>
-            <img
-              alt="fav-icon"
-              class="sc-hKMtZM bvsQcw"
-              data-testid="fav-icon-charmeleon"
-              src="favorito.png"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
+      &gt;
+    </span>
   </div>
 </div>
 `;
