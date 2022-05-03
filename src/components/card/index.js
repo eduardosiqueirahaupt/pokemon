@@ -17,9 +17,6 @@ const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
       return
     }
     if (_isFav) {
-
-      console.log(...pokemonsFav)
-
       localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav.filter(x => x !== id.toString())]))
       handleFeedback("Pokemon Removido dos Favoritos")
     } else {
