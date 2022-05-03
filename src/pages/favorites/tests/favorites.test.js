@@ -1,5 +1,3 @@
-
-
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import Favorites from '..'
 import * as service from '../../home/home.service'
