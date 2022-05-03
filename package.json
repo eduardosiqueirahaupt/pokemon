@@ -34,7 +34,10 @@
     "collectCoverageFrom": [
       "src/**/*.{js,jsx}",
       "!**/node_modules/**",
-      "!build/**"
+      "!build/**",
+      "!src/reportWebVitals.js",
+      "!src/index.js"
+
     ],
     "coverageReporters": [
       "lcov",

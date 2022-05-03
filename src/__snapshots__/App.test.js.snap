@@ -6,11 +6,11 @@ exports[`App Renderizar App 1`] = `
     class="app-container"
   >
     <div
-      class="sc-bczRLJ hmunFc"
+      class="sc-bczRLJ fGfcFn"
     >
       <img
         alt="pokemon-logo"
-        class="sc-hKMtZM BPKtS"
+        class="sc-hKMtZM hYTYvu"
         src="pokemon-logo.png"
       />
       <div
@@ -20,7 +20,7 @@ exports[`App Renderizar App 1`] = `
           href="/"
         >
           <span
-            class="sc-dkzDqf cRnlOR"
+            class="sc-dkzDqf gUffOm"
           >
             Inicio
           </span>
@@ -29,7 +29,7 @@ exports[`App Renderizar App 1`] = `
           href="/favorites"
         >
           <span
-            class="sc-dkzDqf cRnlOR"
+            class="sc-dkzDqf gUffOm"
           >
             Favoritos
           </span>
@@ -37,31 +37,47 @@ exports[`App Renderizar App 1`] = `
       </div>
     </div>
     <div
-      class="sc-jqUVSM klFaXP"
+      class="sc-ftvSup kcjCPy"
+    >
+      <input
+        class="sc-papXJ bIXmnd"
+        data-testid="input-filter"
+        name="search"
+        placeholder="Buscar..."
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      class="sc-iqcoie kGyqHd"
     >
       <div
-        class="sc-ftvSup cSmjlD"
-      >
-        <input
-          class="sc-papXJ bIXmnd"
-          data-testid="input-filter"
-          name="search"
-          placeholder="Buscar..."
-          type="text"
-          value=""
-        />
-      </div>
-      <div
-        class="sc-kDDrLX eNTzbW"
+        class="sc-crXcEl knJbiQ"
       >
         <div
-          class="sc-iqcoie fTAtuW"
+          class="sc-evZas csYxrp"
         >
           <div
-            class="sc-crXcEl hxIgXv"
+            class="sc-breuTD eGELnM"
           />
         </div>
       </div>
+    </div>
+    <div
+      class="sc-jqUVSM dKaHyk"
+    >
+      <span
+        class="sc-kDDrLX dyTzVz disabled"
+        title="Página Anterior"
+      >
+        &lt;
+      </span>
+      <span
+        class="sc-kDDrLX dyTzVz disabled"
+        title="Próxima Página"
+      >
+        &gt;
+      </span>
     </div>
   </div>
 </div>

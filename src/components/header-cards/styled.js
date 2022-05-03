@@ -4,7 +4,7 @@ import searchImg from '../../images/search.png'
 export const Wrapper = styled.div`
     height: 35px;
     display: flex;
-    padding: 10px 10px 20px 35px;
+    padding: 15px 10px 20px 35px;
     position: sticky;
     top: 50px;
     z-index: 10;
