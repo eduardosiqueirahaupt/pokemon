@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
     display: flex;
-    height: 50px;
+    height: 75px;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(32,36,66,1) 41%, rgba(45,50,91,1) 100%);
     position: sticky;
@@ -34,10 +34,20 @@ export const Tab = styled.span`
   }
   position: relative;
   z-index: 2;
+
+  @media (max-width: 480px) {
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+  }
 `
 
 export const LogoImg = styled.img`
   position: absolute;
-  height: 50px;
-  margin-left: 30px;
+  height: 75px;
+  margin-top: 5px;
+  left: 75px;
+
+  @media (max-width: 480px) {
+    opacity: .4
+  }
 `
