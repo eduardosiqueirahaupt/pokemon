@@ -10,96 +10,108 @@ const renderComponent = (isFavorites) => (
 
 describe("<Home/>", () => {
   beforeEach(() => {
-    jest.spyOn(service, 'fetchData').mockImplementation(jest.fn(() => Promise.resolve(getPokemonsMock)));
+    jest.spyOn(service, 'fetchData')
+      .mockImplementation(jest.fn(() => Promise.resolve(getPokemonsMock)));
+
     localStorage.setItem("FavPokemons", JSON.stringify([]))
+
     cleanup();
   })
 
-  it("Deve renderizar com sucesso", async () => {
+  it("Deve renderizar Pokemons e gerar snapshot", async () => {
     const { container } = renderComponent();
-    await waitFor(() => screen.findByText(/bulbasaur/))
-    expect(container).toMatchSnapshot();
-  });
 
-  it("Deve achar pokemon ao carregar tela", async () => {
-    renderComponent();
-    expect(await waitFor(() => screen.findByText(/bulbasaur/))).toBeDefined();
-    expect(await waitFor(() => screen.findByText(/charmander/))).toBeDefined();
+    await screen.findByText(/bulbasaur/);
+
+    expect(screen.queryByText('bulbasaur')).toBeValid()
+    expect(container).toMatchSnapshot();
   });
 
   it("Deve Favoritar Pokemon", async () => {
     renderComponent();
-    await waitFor(() => screen.findByText(/bulbasaur/));
 
-    const favIconBulbasaur = screen.getByTestId('fav-icon-bulbasaur');
+    await screen.findByText(/bulbasaur/);
 
-    fireEvent.click(favIconBulbasaur);
+    const btnFav = screen.getByTestId('fav-icon-bulbasaur')
 
-    expect(await waitFor(() => screen.findByText(/Pokemon Adicionado aos Favoritos/))).toBeDefined();
+    fireEvent.click(btnFav);
+
+    expect(screen.getByText(/Pokemon Adicionado aos Favoritos/)).toBeDefined();
+    expect(JSON.parse(localStorage.getItem('FavPokemons')).length).toBe(1)
   });
 
   it("Deve remover Pokemon dos Favoritos", async () => {
     localStorage.setItem("FavPokemons", JSON.stringify(['1']))
+
     renderComponent();
-    await waitFor(() => screen.findByText(/bulbasaur/));
 
-    const favIconBulbasaur = screen.getByTestId('fav-icon-bulbasaur');
+    await screen.findByText(/bulbasaur/);
 
-    fireEvent.click(favIconBulbasaur);
+    const btnFav = screen.getByTestId('fav-icon-bulbasaur')
+    fireEvent.click(btnFav);
 
-    expect(await waitFor(() => screen.findByText(/Pokemon Removido dos Favoritos/))).toBeDefined();
+    expect(await screen.findByText(/Pokemon Removido dos Favoritos/)).toBeDefined();
+    expect(JSON.parse(localStorage.getItem('FavPokemons')).length).toBe(0)
   });
 
   it("Deve Validar exceção ao tentar favoritar sexto pokemon", async () => {
     localStorage.setItem("FavPokemons", JSON.stringify(['1', '2', '3', '4', '5']))
+
     renderComponent();
-    await waitFor(() => screen.findByText(/bulbasaur/));
 
-    const favIconBulbasaur = screen.getByTestId('fav-icon-wartortle');
+    await screen.findByText(/bulbasaur/);
 
-    fireEvent.click(favIconBulbasaur);
+    const btnFav = screen.getByTestId('fav-icon-pidgeotto')
+    fireEvent.click(btnFav);
 
-    expect(await waitFor(() => screen.findByText(/Somente é permitido favoritar no máximo 5 Pokémon/))).toBeDefined();
+
+    expect(await screen.findByText(/Somente é permitido favoritar no máximo 5 Pokémon/)).toBeDefined();
+    expect(JSON.parse(localStorage.getItem('FavPokemons')).length).toBe(5)
   });
 
-  it("Deve filtrar pokemons", async () => {
+  it("Deve filtrar pokemons - nome = 'bulba'", async () => {
     renderComponent();
 
-    const inputFilter = screen.getByTestId('input-filter');
-    const change = { target: { value: 'bulba' } }
+    const input = screen.getByTestId('input-filter')
 
-    fireEvent.change(inputFilter, change);
+    fireEvent.change(input, { target: { value: 'bulba' } })
 
-    expect(await waitFor(() => screen.findByText(/bulbasaur/))).toBeDefined();
+    expect(await screen.findByText(/bulbasaur/)).toBeDefined();
     expect(screen.queryByText(/charmander/)).toBeNull();
   });
 })
 
 
 describe("<HomeFavorites/>", () => {
-  beforeAll(() => {
-    localStorage.setItem("FavPokemons", JSON.stringify(['1', '2', '3', '4', '5']))
-  });
 
   beforeEach(() => {
+    localStorage.setItem("FavPokemons", JSON.stringify(['1', '2', '3', '4', '5']))
+
     jest.spyOn(service, 'fetchData').mockImplementation(jest.fn(() => Promise.resolve(getPokemonsMock)));
+
     cleanup();
   })
 
-  it("Deve renderizar com sucesso favoritos", async () => {
+  it("Deve renderizar pokemons Favoritados e gerar snapshot", async () => {
     const { container } = renderComponent(true);
-    await waitFor(() => screen.findByText(/bulbasaur/))
+
+    await screen.findByText(/bulbasaur/);
+
+    expect(screen.queryByText('bulbasaur')).toBeValid()
     expect(container).toMatchSnapshot();
   });
 
 
   it("Deve remover dos favoritos e não aparecer mais em tela", async () => {
     renderComponent(true);
-    await waitFor(() => screen.findByText(/bulbasaur/));
 
-    const favIconBulbasaur = screen.getByTestId('fav-icon-bulbasaur');
-    fireEvent.click(favIconBulbasaur)
+    await screen.findByText(/bulbasaur/);
 
+    const btnFav = screen.getByTestId('fav-icon-bulbasaur')
+
+    fireEvent.click(btnFav);
+
+    
     expect(await waitFor(() => screen.findByText(/Pokemon Removido dos Favoritos/))).toBeDefined();
     expect(screen.queryByText(/bulbasaur/)).toBeNull();
   });

@@ -36,7 +36,7 @@ const Home = ({ isFavorites }) => {
 
   useEffect(() => {
     getData();
-  }, [getData])
+  }, [])
 
   return (
     pokeData && <S.Wrapper>

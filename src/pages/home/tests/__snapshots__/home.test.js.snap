@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`<Home/> Deve renderizar com sucesso 1`] = `
+exports[`<Home/> Deve renderizar Pokemons e gerar snapshot 1`] = `
 <div>
   <div
     class="sc-gKXOVf icvWOW"
@@ -533,7 +533,7 @@ exports[`<Home/> Deve renderizar com sucesso 1`] = `
 </div>
 `;
 
-exports[`<HomeFavorites/> Deve renderizar com sucesso favoritos 1`] = `
+exports[`<HomeFavorites/> Deve renderizar pokemons Favoritados e gerar snapshot 1`] = `
 <div>
   <div
     class="sc-gKXOVf icvWOW"
