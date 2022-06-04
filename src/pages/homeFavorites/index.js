@@ -1,10 +1,10 @@
 import { useState } from "react";
-import Cards from "../../components/cards";
+import CardsFavorites from "../../components/cardsFavorites";
 import Header from "../../components/header-cards";
-import { usePokemonsGetData } from "./home.service";
-import * as S from "./styled";
+import { usePokemonsGetData } from "../home/home.service";
+import * as S from "../home/styled";
 
-function Home() {
+function HomeFavorites() {
   const [search, setSearch] = useState("");
   const { data } = usePokemonsGetData();
 
@@ -25,7 +25,7 @@ function Home() {
       <S.Content>
         <S.WrapperCards>
           <S.ContentCards>
-            <Cards
+            <CardsFavorites
               data={filterPokemons()}
               handleFeedback={() => console.log("FEEDBACK")}
             />
@@ -33,7 +33,8 @@ function Home() {
         </S.WrapperCards>
       </S.Content>
     </S.Wrapper>
+
   );
 }
 
-export default Home;
+export default HomeFavorites;

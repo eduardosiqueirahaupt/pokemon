@@ -25,26 +25,6 @@ const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
     } else {
       setIsFav(prev => !prev);
     }
-
-
-    // const pokemonsFav = JSON.parse(localStorage.getItem("FavPokemons"));
-    // const validated = validate(pokemonsFav, _isFav);
-    // if (!validated.isValid) {
-    //   handleFeedback(validated.message)
-    //   return
-    // }
-    // if (_isFav) {
-    //   localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav.filter(x => x !== id)]))
-    //   handleFeedback("Pokemon Removido dos Favoritos")
-    // } else {
-    //   localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav, id]))
-    //   handleFeedback("Pokemon Adicionado aos Favoritos")
-    // }
-    // if (refreshCards) {
-    //   refreshCards();
-    // } else {
-    //   setIsFav(prev => !prev);
-    // }
   }
 
   return (

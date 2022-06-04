@@ -7,13 +7,13 @@ const useFavoritesPokemons = () => {
 
     const adicionarFavoritos = useCallback((id) => {
         setFavoritesPokemons(prevState => [...prevState, id])
-    }, [])
+    }, [setFavoritesPokemons])
 
     const getFavoritesPokemons = useCallback(() => favoritesPokemons, [favoritesPokemons]);
 
     const removeFavoritesPokemon = useCallback((id) => {
         setFavoritesPokemons(prevState => prevState.filter(x => x !== id))
-    }, [])
+    }, [setFavoritesPokemons])
 
     return {
         adicionarFavoritos,
