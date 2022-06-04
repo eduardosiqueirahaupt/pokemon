@@ -1,26 +1,23 @@
 import * as S from './styled'
 import Favorito from '../../images/favorito.png'
 import AddFavorito from '../../images/add-fav.png'
-import { useState } from 'react';
-import { validate } from './validate';
+import { memo, useState } from 'react';
+import useFavoritesPokemons from '../../hooks/useFavoritesPokemons';
+
 const url_img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
 
 const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
   const [_isFav, setIsFav] = useState(isFav);
   const getSrcImg = () => `${url_img}${id}.svg`
 
+  const { removeFavoritesPokemon, adicionarFavoritos } = useFavoritesPokemons();
+
   const handleFav = () => {
-    const pokemonsFav = JSON.parse(localStorage.getItem("FavPokemons"));
-    const validated = validate(pokemonsFav, _isFav);
-    if (!validated.isValid) {
-      handleFeedback(validated.message)
-      return
-    }
     if (_isFav) {
-      localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav.filter(x => x !== id)]))
+      removeFavoritesPokemon(id);
       handleFeedback("Pokemon Removido dos Favoritos")
     } else {
-      localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav, id]))
+      adicionarFavoritos(id);
       handleFeedback("Pokemon Adicionado aos Favoritos")
     }
     if (refreshCards) {
@@ -28,6 +25,26 @@ const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
     } else {
       setIsFav(prev => !prev);
     }
+
+
+    // const pokemonsFav = JSON.parse(localStorage.getItem("FavPokemons"));
+    // const validated = validate(pokemonsFav, _isFav);
+    // if (!validated.isValid) {
+    //   handleFeedback(validated.message)
+    //   return
+    // }
+    // if (_isFav) {
+    //   localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav.filter(x => x !== id)]))
+    //   handleFeedback("Pokemon Removido dos Favoritos")
+    // } else {
+    //   localStorage.setItem("FavPokemons", JSON.stringify([...pokemonsFav, id]))
+    //   handleFeedback("Pokemon Adicionado aos Favoritos")
+    // }
+    // if (refreshCards) {
+    //   refreshCards();
+    // } else {
+    //   setIsFav(prev => !prev);
+    // }
   }
 
   return (
@@ -41,4 +58,4 @@ const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
   )
 }
 
-export default Card;
+export default memo(Card);

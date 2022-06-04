@@ -1,21 +1,22 @@
 import * as S from "./styled";
 
-type Props = {
+interface Props {
   search: string;
-  handleSearch: () => void;
-};
+  handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
+}
 
-function Header({ search, handleSearch }: Props) {
+function Header({ handleSearch }: Props) {
+
   return (
     <S.Wrapper>
       <S.Input
-        value={search}
         onChange={handleSearch}
         type="text"
         name="search"
         placeholder="Buscar..."
         data-testid="input-filter"
       />
+      <span></span>
     </S.Wrapper>
   );
 }
