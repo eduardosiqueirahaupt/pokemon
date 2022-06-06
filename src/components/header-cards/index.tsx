@@ -6,7 +6,6 @@ interface Props {
 }
 
 function Header({ handleSearch }: Props) {
-
   return (
     <S.Wrapper>
       <S.Input

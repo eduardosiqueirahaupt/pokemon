@@ -9,7 +9,7 @@ const useFavoritesPokemons = () => {
         setFavoritesPokemons(prevState => [...prevState, id])
     }, [setFavoritesPokemons])
 
-    const getFavoritesPokemons = useCallback(() => favoritesPokemons, [favoritesPokemons]);
+    const getFavoritesPokemons = () => favoritesPokemons;
 
     const removeFavoritesPokemon = useCallback((id) => {
         setFavoritesPokemons(prevState => prevState.filter(x => x !== id))

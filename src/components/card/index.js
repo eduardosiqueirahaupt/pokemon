@@ -1,24 +1,27 @@
+import { useState } from 'react';
 import * as S from './styled'
 import Favorito from '../../images/favorito.png'
 import AddFavorito from '../../images/add-fav.png'
-import { memo, useState } from 'react';
-import useFavoritesPokemons from '../../hooks/useFavoritesPokemons';
+import { useSetRecoilState } from 'recoil';
+import { favoritesPokemonsStore } from '../../store/favorites';
+import useAlert from '../../hooks/useAlert';
 
 const url_img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
 
-const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
+
+const Card = ({ id, name, refreshCards, isFav }) => {
+  const { showAlert } = useAlert()
+  const setRecoilState = useSetRecoilState(favoritesPokemonsStore)
   const [_isFav, setIsFav] = useState(isFav);
   const getSrcImg = () => `${url_img}${id}.svg`
 
-  const { removeFavoritesPokemon, adicionarFavoritos } = useFavoritesPokemons();
-
   const handleFav = () => {
     if (_isFav) {
-      removeFavoritesPokemon(id);
-      handleFeedback("Pokemon Removido dos Favoritos")
+      setRecoilState(prevState => prevState.filter(x => x !== id))
+      showAlert("Pokemon Removido dos Favoritos")
     } else {
-      adicionarFavoritos(id);
-      handleFeedback("Pokemon Adicionado aos Favoritos")
+      setRecoilState(prevState => [...prevState, id])
+      showAlert("Pokemon Adicionado aos Favoritos")
     }
     if (refreshCards) {
       refreshCards();
@@ -38,4 +41,4 @@ const Card = ({ id, name, refreshCards, isFav, handleFeedback }) => {
   )
 }
 
-export default memo(Card);
+export default Card;
