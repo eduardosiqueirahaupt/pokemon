@@ -1,11 +1,14 @@
+import { useSetRecoilState } from "recoil";
+import { filterHeader } from "store/filter-header";
 import * as S from "./styled";
 
-interface Props {
-  search: string;
-  handleSearch: (e: React.ChangeEvent<HTMLInputElement>) => void;
-}
+function HeaderFilter() {
+  const setRecoilState = useSetRecoilState(filterHeader)
 
-function Header({ handleSearch }: Props) {
+  const handleSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+    setRecoilState(e.target.value)
+  }
+
   return (
     <S.Wrapper>
       <S.Input
@@ -15,9 +18,8 @@ function Header({ handleSearch }: Props) {
         placeholder="Buscar..."
         data-testid="input-filter"
       />
-      <span></span>
     </S.Wrapper>
   );
 }
 
-export default Header;
+export default HeaderFilter;

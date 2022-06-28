@@ -9,7 +9,7 @@ import useAlert from '../../hooks/useAlert';
 const url_img = "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
 
 
-const Card = ({ id, name, refreshCards, isFav }) => {
+const Card = ({ id, name, isFav }) => {
   const { showAlert } = useAlert()
   const setRecoilState = useSetRecoilState(favoritesPokemonsStore)
   const [_isFav, setIsFav] = useState(isFav);
@@ -23,11 +23,7 @@ const Card = ({ id, name, refreshCards, isFav }) => {
       setRecoilState(prevState => [...prevState, id])
       showAlert("Pokemon Adicionado aos Favoritos")
     }
-    if (refreshCards) {
-      refreshCards();
-    } else {
-      setIsFav(prev => !prev);
-    }
+    setIsFav(prev => !prev);
   }
 
   return (

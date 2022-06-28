@@ -1,9 +1,8 @@
-import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/header";
 import Home from "./pages/home";
 import './App.css'
-import HomeFavorites from "./pages/homeFavorites";
+import HomeFavorites from "./pages/favorites";
 import GlobalAlert from "./components/global-alert";
 
 function App() {

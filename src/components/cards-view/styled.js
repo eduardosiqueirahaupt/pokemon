@@ -1,5 +1,10 @@
 import styled from 'styled-components'
 
 export const Wrapper = styled.div`
-  height: calc(100% - 50px);
+  display: flex;
+  flex-wrap: wrap;
+
+  > * {
+    margin: 10px;
+  }
 `

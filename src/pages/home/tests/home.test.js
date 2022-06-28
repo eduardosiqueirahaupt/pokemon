@@ -1,6 +1,6 @@
 import { cleanup, fireEvent, render, screen, waitFor } from '@testing-library/react'
 import Home from '..'
-import * as service from '../home.service'
+import * as service from '../../../service/pokeapi.service'
 
 const renderComponent = (isFavorites) => (
   render(
