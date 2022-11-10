@@ -8,7 +8,8 @@ export default function GlobalAlert() {
   const closeAlert = () => setAlert({
     isOpen: false,
     message: ''
-  })
+  });
+
   return (
     <Snackbar
       open={alert.isOpen}

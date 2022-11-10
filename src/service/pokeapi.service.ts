@@ -1,4 +1,4 @@
-import { IFetchPokemons } from "utils";
+import { IFetchPokemons } from "types";
 import { useFetch } from "../hooks/useFetch";
 
 export interface IFetch {
