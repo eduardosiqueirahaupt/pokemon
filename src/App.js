@@ -1,9 +1,9 @@
 import { Route, Routes } from "react-router-dom";
 import Header from "./components/header";
-import Home from "./pages/home";
-import './App.css'
-import HomeFavorites from "./pages/favorites";
 import GlobalAlert from "./components/global-alert";
+import Favorites from "pages/favorites";
+import Home from "pages/home";
+import './App.css'
 
 function App() {
   return (
@@ -11,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" exact element={<Home />} />
-        <Route path="/favorites" exact element={<HomeFavorites />} />
+        <Route path="/favorites" exact element={<Favorites />} />
       </Routes>
       <GlobalAlert />
     </div>
